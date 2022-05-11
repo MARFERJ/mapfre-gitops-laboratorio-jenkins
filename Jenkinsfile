@@ -8,7 +8,7 @@ pipeline {
             }
         }
 	stage('Shell Script Hello') {
-	agent { Label 'Docker' }
+	agent { Label 'docker-agent' }
             steps {
                 sh 'echo "Hello World, from Shell Script"'
             }
