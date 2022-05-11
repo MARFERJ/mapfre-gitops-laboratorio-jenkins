@@ -10,9 +10,10 @@ pipeline {
     }
     stages {
 	agent { Label docker }
-        stage('sh Hello') {
+        stage('Script Shell Hello') {
             steps {
                 sh 'echo "Hello World"'
-		}	
-	}
+            }
+        }
+    }
 }
