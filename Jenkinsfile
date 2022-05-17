@@ -30,7 +30,7 @@ pipeline {
 		branch "PR-*"
 	    }
             steps {
-                sh 'echo "Pedro"| bash ejercicio.sh pruebas'
+                sh 'echo "Jose"| bash ejercicio.sh prueba'
 		sh 'echo "secreto"| bash ejercicio.sh prueba'
             }
         }
