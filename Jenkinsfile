@@ -18,8 +18,8 @@ pipeline {
 		branch "PR-*"
 	    }
             steps {
-                sh 'echo "Pedro"|./ejercicio.sh pruebas'
-		sh 'echo "secreto"|./ejercicio.sh prueba'
+                sh 'echo "Pedro"| bash ejercicio.sh pruebas'
+		sh 'echo "secreto"| bash ejercicio.sh prueba'
             }
         }
     }
